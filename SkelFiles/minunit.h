@@ -1,3 +1,17 @@
+/*
+USAGE:
+Include minunit.h
+Include relevant header files
+Call mu_suite_start()
+Define individual test functions of type 'char *test()'
+Terminate with 'return NULL'
+Use mu_assert with assertion and error message to assert
+Create all_tests function of type 'char *test()'
+Terminate with 'return NULL'
+Run each test with mu_run_test(test)
+Terminate file with RUN_TESTS(all_tests)
+*/
+
 #undef NDEBUG
 #ifndef _minunit_h
 #define _minunit_h
